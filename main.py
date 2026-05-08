@@ -104,6 +104,7 @@ def add_new_student(students):
     students.append(new_student)
 
     print(f"Студент {new_student['name']} добавлен.")
+    show_group_average(students)
 
 
 def find_lowest_student(students):
@@ -138,6 +139,7 @@ def delete_student_with_lowest_grades(students):
     lowest_student = find_lowest_student(students)
     students.remove(lowest_student)
     print(f"Студент {lowest_student['name']} удален.")
+    show_group_average(students)
 
 
 def launch_menu(students):
