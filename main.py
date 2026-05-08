@@ -170,4 +170,5 @@ def launch_menu(students):
             print("Ошибка: выберите пункт из меню.")
 
 
-launch_menu(students)
+if __name__ == "__main__":
+    launch_menu(students)
