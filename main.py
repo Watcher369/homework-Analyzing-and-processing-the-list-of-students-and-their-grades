@@ -1,12 +1,5 @@
 
 
-students = [
-    {"name": "Гарри", "grades": [80, 90, 78]},
-    {"name": "Гермиона", "grades": [95, 99, 97]},
-    {"name": "Рон", "grades": [60, 70, 64]},
-    {"name": "Драко", "grades": [60, 75, 70]},
-]
-
 def calculate_average(grades):
     return sum(grades) / len(grades)
 
@@ -142,14 +135,7 @@ def delete_student_with_lowest_grades(students):
     show_group_average(students)
 
 
-def main():
-    students = [
-        {"name": "Гарри", "grades": [80, 90, 78]},
-        {"name": "Гермиона", "grades": [95, 99, 97]},
-        {"name": "Рон", "grades": [60, 70, 64]},
-        {"name": "Драко", "grades": [60, 75, 70]},
-    ]
-
+def main(students):
     menu = {
         "1": ["Показать информацию о студентах", show_students_info],
         "2": ["Показать общий средний балл", show_group_average],
@@ -178,4 +164,12 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+
+    students = [
+        {"name": "Гарри", "grades": [80, 90, 78]},
+        {"name": "Гермиона", "grades": [95, 99, 97]},
+        {"name": "Рон", "grades": [60, 70, 64]},
+        {"name": "Драко", "grades": [60, 75, 70]},
+    ]
+
+    main(students)
